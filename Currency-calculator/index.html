@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Calculator</title>
+
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <div id="content">
         <header>
             <h1>Currency Calculator</h1>
+            <p> Welcome to my currency calculator, please follow instructions below to use.</p>
         </header>
-        
-        <p> Welcome to my currency calculator, please follow instructions below to use.</p>
     
-    <section>
-        <select>
-            <option value="historical">Historical</option>
-            <option value="current">Current</option>
-        </select>
-    </section>
+        <section>
+            <select>
+                <option value="historical">Historical</option>
+                <option value="current">Current</option>
+            </select>
+        </section>
 
-    <section>
-        <form action="currency-calculator.php" method="post">
-            <label for="amount">Amount:</label>
-            <input type="text" name="amount" id="amount" required>
-            <br>
-            <label for="from">From:</label>
-            <select name="from" id="from" required>
-                <option value="usd">USD</option>
-                <option value="eur">EUR</option>
-                <option value="gbp">GBP</option>
-            </select>
-            <br>
-            <label for="to">To:</label>
-            <select name="to" id="to" required>
-                <option value="usd">USD</option>
-                <option value="eur">EUR</option>
-                <option value="gbp">GBP</option>
-            </select>
-            <br>
-            <button type="submit">Convert</button>
-        </form>
-    </section>
+        <section>
+            <form action="currency-calculator.php" method="post">
+                <label for="amount">Amount:</label>
+                <input type="text" name="amount" id="amount" required>
+                <br>
+                <label for="from">From:</label>
+                <select name="from" id="from" required>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <br>
+                <label for="to">To:</label>
+                <select name="to" id="to" required>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <br>
+                <button type="submit">Convert</button>
+            </form>
+        </section>
     </div>
 </body>
 </html>
