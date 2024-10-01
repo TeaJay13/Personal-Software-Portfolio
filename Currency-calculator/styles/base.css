@@ -27,3 +27,78 @@ section {
     border-radius: 10px;
     text-align: center;
 }
+
+/* Container holding both boxes */
+.currency-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Individual boxes for input and output */
+  .currency-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the total width */
+  }
+  
+  /* Labels and Input styling */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;          /* Make input fields fill the width of their container */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Output display */
+  #convertedAmountDisplay {
+    width: 100%;            /* Match the width of input fields */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    font-size: 24px;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;    /* Add margin to match input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 45px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* General styling for the textfield class */
+.textfield {
+    width: 500px;          /* Set width to 250px */
+    height: 100px;          /* Set height to 50px */
+    padding: 10px;         /* Add padding inside the boxes */
+    font-size: 16px;       /* Adjust font size for readability */
+    border: 1px solid #ccc; /* Add border for consistency */
+    border-radius: 5px;    /* Optional: round corners */
+    box-sizing: border-box; /* Include padding and border in total width/height */
+  }
