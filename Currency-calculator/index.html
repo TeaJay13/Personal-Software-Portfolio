@@ -6,54 +6,49 @@
     <title>Currency Calculator</title>
 
     <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/currency-conversion.js" defer></script>
 </head>
 <body>
     <div id="content">
         <header>
             <h1>Currency Calculator</h1>
-            <p> Welcome to my currency calculator, please follow instructions below to use.</p>
+            <p>Welcome to my currency calculator. Please follow the instructions below to use.</p>
         </header>
     
         <section>
-            <select>
-                <option value="historical">Historical</option>
-                <option value="current">Current</option>
-            </select>
-        </section>
-
-        <section>
             <div class="currency-container">
-              <!-- Input Section -->
-              <div class="currency-box">
-                <label for="amount">Amount:</label>
-                <input class="textfield" type="text" name="amount" id="amount" placeholder="Enter numerical amount..." required>
-                <label for="from">From:</label>
-                <select name="from" id="from" required>
-                  <option value="usd">USD</option>
-                  <option value="eur">EUR</option>
-                  <option value="gbp">GBP</option>
-                </select>
-              </div>
-          
-              <!-- Output Section (Right Side) -->
-              <div class="currency-box">
-                <label for="convertedAmount">Converted Amount:</label>
-                <div class="textfield" id="convertedAmountDisplay">
-                  <span id="convertedAmount">0</span>
+                <!-- Input Section -->
+                <div class="currency-box" id="basebox">
+                    <label for="amount-base">Amount:</label>
+                    <input class="textfield" type="number" id="amount-base" placeholder="Enter amount..." required>
+                    
+                    <label for="base">From:</label>
+                    <select id="base" required>
+                        <!-- Base currency options will be populated by JS -->
+                    </select>
                 </div>
-                <label for="to">To:</label>
-                <select name="to" id="to" required>
-                  <option value="usd">USD</option>
-                  <option value="eur">EUR</option>
-                  <option value="gbp">GBP</option>
-                </select>
-              </div>
+
+                <!-- Output Section -->
+                <div class="currency-box" id="conversionbox">
+                    <label for="convertedAmount">Converted Amount:</label>
+                    <div class="textfield" id="convertedAmountDisplay">
+                        <span id="convertedAmount">0</span>
+                    </div>
+                    
+                    <label for="conversion">To:</label>
+                    <select id="conversion" required>
+                        <!-- Conversion currency options will be populated by JS -->
+                    </select>
+                </div>
             </div>
-            
-            <br>
-            <button type="submit">Convert</button>
-          </section>
-          
+        </section>
     </div>
 </body>
+<footer>
+    <p>&copy;<span id='currentYear'></span> - Currency Calculator - TJ Strickland</p>
+    <!-- datespan -->
+    <p id="current-year"></p>
+</footer>
 </html>

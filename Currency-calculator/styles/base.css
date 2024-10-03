@@ -1,28 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --background-color: #EFF1ED;
-    --header-color: #373D20;
-    --accent-color: #717744;
-    --accent2-color: #BCBD8B;
-    --accent3-color: #766153;
+:root {
+    --background-color: white;
+    --header-color: lightblue;
+    --footer-color: grey;
 }
 
 body{
     font-family: "Montserrat", sans-serif;
     background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-#header {
+#content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+header {
     background-color: var(--header-color);
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--footer-color);
     color: white;
     padding: 10px;
     text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 section {
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -30,75 +48,61 @@ section {
 
 /* Container holding both boxes */
 .currency-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     width: 100%;
-    max-width: 800px;
     margin: 0 auto;
-  }
-  
-  /* Individual boxes for input and output */
-  .currency-box {
-    flex: 1;
+}
+
+/* Individual boxes for input and output */
+.currency-box {
     padding: 20px;
     border: 1px solid #ccc;
     margin: 10px;
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in the total width */
-  }
-  
-  /* Labels and Input styling */
-  label {
+    box-sizing: border-box;
+    background-color: #f9f9f9;   
+}
+
+/* Labels and Input styling */
+label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-  }
-  
-  input, select {
-    width: 100%;          /* Make input fields fill the width of their container */
-    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+input, select {
+    width: 100%;         
+    box-sizing: border-box; 
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-  }
-  
-  /* Output display */
-  #convertedAmountDisplay {
-    width: 100%;            /* Match the width of input fields */
-    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Output display */
+#convertedAmountDisplay {
+    width: 100%;    
+    box-sizing: border-box;
     font-size: 24px;
     color: #333;
     background-color: #f9f9f9;
     padding: 10px;
-    margin-bottom: 15px;    /* Add margin to match input fields */
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     min-height: 45px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+}
 
-  /* General styling for the textfield class */
+/* General styling for the textfield class */
 .textfield {
-    width: 500px;          /* Set width to 250px */
-    height: 100px;          /* Set height to 50px */
-    padding: 10px;         /* Add padding inside the boxes */
-    font-size: 16px;       /* Adjust font size for readability */
-    border: 1px solid #ccc; /* Add border for consistency */
-    border-radius: 5px;    /* Optional: round corners */
-    box-sizing: border-box; /* Include padding and border in total width/height */
-  }
+    width: 100%;        
+    height: 100px;        
+    padding: 10px;         
+    font-size: 16px;       
+    border: 1px solid #ccc;
+    border-radius: 5px;    
+    box-sizing: border-box;
+}
