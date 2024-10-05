@@ -106,3 +106,9 @@ input, select {
     border-radius: 5px;    
     box-sizing: border-box;
 }
+
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
