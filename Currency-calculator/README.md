@@ -4,7 +4,7 @@ In this project, I aimed to further my learning as a software engineer by buildi
 
 The primary purpose of this software is to solidify my understanding of JavaScript fundamentals by working on a practical and real-world application. It highlights the asynchronous nature of JavaScript with the `fetch` API and showcases how JavaScript can be used to manipulate web page content dynamically.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=uUhFw3v6r90)
 
 # Development Environment
 
