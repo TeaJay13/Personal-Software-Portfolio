@@ -2,7 +2,7 @@
 
 This project demonstrates my ability to use TypeScript by building a basic CRUD application. It performs create, read, update, and delete operations on a dataset, showcasing TypeScript's strong typing and error handling. My goal was to improve my understanding of TypeScript and how it can enhance code reliability.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=BYlD1GhrWIE)
 
 # Development Environment
 
