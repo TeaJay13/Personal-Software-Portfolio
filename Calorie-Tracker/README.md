@@ -11,7 +11,7 @@ Follow the on-screen menu to add, view, update, delete, or calculate calorie dat
 The data is stored and retrieved from the SQLite database (calorie.db), ensuring persistence between sessions.
 The goal of this project was to develop practical experience with relational databases and Python, focusing on efficient data handling and user interaction.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=BnaoELus0T4)
 
 # Relational Database
 
