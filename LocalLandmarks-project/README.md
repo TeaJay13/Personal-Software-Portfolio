@@ -1,12 +1,12 @@
 # Overview
 
-This project is an interactive map application designed to display local landmarks and locations in Idaho Falls. As a software engineer, this project allowed me to deepen my understanding of geographic information systems (GIS) and interactive mapping while developing user-friendly software.
+This project is an interactive map application designed to display local landmarks and locations in Idaho Falls. This project allowed me to deepen my understanding of geographic information systems (GIS) and interactive mapping while developing user-friendly software.
 
-The map features over 20 notable landmarks, including parks, museums, and other attractions. Users can filter landmarks by type using intuitive buttons, and clicking on a marker displays detailed information about the location, along with an image. The map is centered on Idaho Falls and constrained to a 350-mile radius, ensuring the focus remains on the local area.
+The map features over 20 notable landmarks, including parks, museums, and other attractions. Users can filter landmarks by type using intuitive buttons, and clicking on a marker displays detailed information about the location, along with an image. The map is centered on Idaho Falls with lanks marks only closeby ensuring the focus remains on the local area.
 
 The purpose of this software is to provide an educational and practical tool for learning GIS concepts, improving JavaScript programming skills, and creating user-focused applications.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=WbZfVT9m_JM)
 
 # Development Environment
 
