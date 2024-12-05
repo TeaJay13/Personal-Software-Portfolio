@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IF: Local Landmarks and Locations</title>
+        <!-- ArcGIS API for JavaScript -->
+        <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+        <script src="https://js.arcgis.com/4.28/"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>Local Landmarks and Locations</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Local Landmarks and Locations Map</h1>
+            <!-- Filter Buttons -->
+            <div id="filter-buttons">
+                <button data-type="">Show All</button>
+                <button data-type="Park">Parks</button>
+                <button data-type="Museum">Museums</button>
+                <button data-type="Zoo">Zoos</button>
+                <button data-type="Stadium">Stadiums</button>
+                <button data-type="Aquarium">Aquariums</button>
+                <button data-type="Landmark">Landmarks</button>
+            </div>
+            <!-- Map Div -->
+            <div id="viewDiv"></div>
+            <script src="script.js"></script>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Local Landmarks and Locations Map</p>
+    </footer>
+</body>
+</html>
